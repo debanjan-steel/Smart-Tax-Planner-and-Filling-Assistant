@@ -1,5 +1,8 @@
 # TaxSahayak: Smart Tax Planner & Official Portal Filing Assistant
 
+> 🌐 **Live Web Application (PWA)**: **[https://smart-tax-planner-and-filling-assistant.onrender.com/](https://smart-tax-planner-and-filling-assistant.onrender.com/)**  
+> 📦 **GitHub Repository**: **[https://github.com/debanjan-steel/Smart-Tax-Planner-and-Filling-Assistant](https://github.com/debanjan-steel/Smart-Tax-Planner-and-Filling-Assistant)**
+
 > **Project Overview**: A privacy-first Progressive Web App (PWA) designed to hold a taxpayer's hand through the official Income Tax Portal (`eportal.incometax.gov.in`). The assistant accurately diagnoses the required ITR form (ITR-1, 2, 3, or 4) to prevent Section 139(9) defective return notices, extracts and explains figures from tax documents (Form 16, AIS/TIS, 26AS), computes the optimal tax liability under Old vs New Tax Regimes (Section 115BAC), and provides a step-by-step portal filling guide with a ready-to-use Tax Computation Sheet.
 
 ---

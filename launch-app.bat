@@ -1,0 +1,3 @@
+@echo off
+echo Opening TaxSahayak Live Web App...
+start https://smart-tax-planner-and-filling-assistant.onrender.com/

@@ -1,5 +1,11 @@
 # Smart Tax Planner and Filing Assistant (TaxSahayak 🇮🇳)
 
+[![Live App](https://img.shields.io/badge/🚀%20Live%20App-Open%20TaxSahayak%20(PWA)-00c853?style=for-the-badge&logo=render&logoColor=white)](https://smart-tax-planner-and-filling-assistant.onrender.com/)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/debanjan-steel/Smart-Tax-Planner-and-Filling-Assistant)
+
+> 🔗 **Direct 1-Click Live App URL**: **[https://smart-tax-planner-and-filling-assistant.onrender.com/](https://smart-tax-planner-and-filling-assistant.onrender.com/)**  
+> *Tap or click the link above on your phone (Android) or laptop to open and install TaxSahayak instantly.*
+
 [![Python 3.13](https://img.shields.io/badge/Python-3.13-blue.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688.svg)](https://fastapi.tiangolo.com/)
 [![React 19](https://img.shields.io/badge/Frontend-React%2019-61dafb.svg)](https://react.dev/)
