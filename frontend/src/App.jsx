@@ -13,6 +13,7 @@ import {
   AlertTriangle,
   RefreshCw
 } from 'lucide-react';
+import { API_BASE } from './config';
 import FormFinderWizard from './components/FormFinderWizard';
 import DocumentUploadPipeline from './components/DocumentUploadPipeline';
 import TaxOptimizerEngine from './components/TaxOptimizerEngine';
@@ -28,7 +29,7 @@ export default function App() {
 
   useEffect(() => {
     // Check backend health
-    fetch('/health')
+    fetch(`${API_BASE}/health`)
       .then(res => res.json())
       .then(data => {
         if (data.status === 'healthy') {

@@ -13,6 +13,7 @@ import {
   RefreshCw,
   Info
 } from 'lucide-react';
+import { API_BASE } from '../config';
 
 export default function DocumentUploadPipeline({ onProceed, diagnosedForm }) {
   const [form16File, setForm16File] = useState(null);
@@ -38,7 +39,7 @@ export default function DocumentUploadPipeline({ onProceed, diagnosedForm }) {
     if (pw) formData.append('password', pw);
 
     try {
-      const res = await fetch('/api/v1/documents/parse-form16', {
+      const res = await fetch(`${API_BASE}/api/v1/documents/parse-form16`, {
         method: 'POST',
         body: formData
       });
@@ -63,7 +64,7 @@ export default function DocumentUploadPipeline({ onProceed, diagnosedForm }) {
     if (pw) formData.append('password', pw);
 
     try {
-      const res = await fetch('/api/v1/documents/parse-ais', {
+      const res = await fetch(`${API_BASE}/api/v1/documents/parse-ais`, {
         method: 'POST',
         body: formData
       });
@@ -80,7 +81,7 @@ export default function DocumentUploadPipeline({ onProceed, diagnosedForm }) {
 
   const checkReconciliation = (f16 = form16Data, ais = aisData) => {
     if (!f16 && !ais) return;
-    fetch('/api/v1/documents/reconcile', {
+    fetch(`${API_BASE}/api/v1/documents/reconcile`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ form16: f16, ais: ais })

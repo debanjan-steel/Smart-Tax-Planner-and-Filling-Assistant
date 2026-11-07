@@ -25,6 +25,7 @@
 | **Phase 6** | Interactive Official Portal Step-by-Step Filing Guide | `[DONE]` | Completed |
 | **Phase 7** | PWA Capabilities (Offline, Installable, Service Worker) | `[DONE]` | Completed |
 | **Phase 8** | Security Hardening & DPDP Act Compliance Audit | `[DONE]` | Completed |
+| **Phase 9** | Cloud Deployment & Multi-Platform PWA Readiness | `[DONE]` | Completed |
 
 ---
 
@@ -119,5 +120,16 @@
 
 ---
 
+### Phase 9: Cloud Deployment & Multi-Platform PWA Readiness `[DONE]`
+- [x] `[DONE]` Progressive Web App (PWA) selected as the optimal deployment format for unified Laptop + Android experience.
+- [x] `[DONE]` Generated crisp, modern PWA app icons (`192x192` and `512x512` maskable PNGs) conforming to Google Chrome & Android Web App Manifest criteria.
+- [x] `[DONE]` Configured full-stack unified production serving in [main.py](file:///c:/Users/deban/OneDrive/Desktop/Self%20Projects/ITR%20App/backend/app/main.py) to serve compiled `frontend/dist` with client-side SPA fallback and live `/api/v1` backend endpoints.
+- [x] `[DONE]` Added multi-stage [Dockerfile](file:///c:/Users/deban/OneDrive/Desktop/Self%20Projects/ITR%20App/Dockerfile) (Node 20 Alpine builder + Python 3.13-slim runner) supporting cloud platforms (Render, Railway, Fly.io, Cloud Run).
+- [x] `[DONE]` Created [render.yaml](file:///c:/Users/deban/OneDrive/Desktop/Self%20Projects/ITR%20App/render.yaml) for one-click deployment via Render Infrastructure-as-Code.
+- [x] `[DONE]` Configured flexible `API_BASE` in [config.js](file:///c:/Users/deban/OneDrive/Desktop/Self%20Projects/ITR%20App/frontend/src/config.js) supporting both unified and decoupled deployments (e.g. Vercel + Render).
+- [x] `[DONE]` 19/19 backend pytest tests verified passing; production frontend build verified.
+
+---
+
 ## 💡 Notes & Discussion Log
-- *2026-11-07*: All phases completed! The complete TaxSahayak application is verified and operational with 19 passing unit tests and a compiled PWA bundle ready for local run and deployment.
+- *2026-11-07*: All phases through Phase 9 completed! The complete TaxSahayak application is packaged and ready for deployment to free cloud tiers (Render / Railway / Vercel), providing an installable native-like app on both Android and Laptop.

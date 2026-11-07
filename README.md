@@ -145,5 +145,42 @@ All 19 unit tests verify Form Finder decision paths, TRACES Form 16 extraction, 
 
 ---
 
+## 🚀 Cloud Deployment & PWA Installation Guide
+
+TaxSahayak is built as a **Progressive Web App (PWA)** — the optimal architecture for seamless cross-platform usage across both **Android phones** and **Laptops (Windows / macOS / Linux)** from a single, auto-updating codebase.
+
+### Option 1: Unified 1-Click Deployment on Render (Recommended - 100% Free)
+1. Go to [Render.com](https://render.com) and log in with GitHub.
+2. Click **New +** > **Web Service**.
+3. Select your repository: `debanjan-steel/Smart-Tax-Planner-and-Filling-Assistant`.
+4. Choose **Docker** as the runtime (Render will automatically detect the provided [Dockerfile](Dockerfile)).
+5. Set the Plan to **Free** and click **Deploy Web Service**.
+6. Render builds the React PWA and starts the FastAPI server on a free secure HTTPS URL (e.g. `https://smart-tax-planner.onrender.com`).
+
+*(Alternative: You can also deploy via [Railway.app](https://railway.app), [Fly.io](https://fly.io), or [Google Cloud Run] using the same Dockerfile).*
+
+### Option 2: Decoupled (Vercel Frontend + Render Backend)
+- **Backend on Render**: Deploy `backend/app/main:app` as a Python web service.
+- **Frontend on Vercel**: Connect the `frontend` folder to Vercel and add the environment variable `VITE_API_URL=https://your-backend.onrender.com`.
+
+---
+
+## 📱 How to Install on Your Devices
+
+### 1. On Android Phones (Chrome, Firefox, or Samsung Internet)
+1. Open your deployed HTTPS URL on your Android phone's browser (e.g. Google Chrome).
+2. Chrome will automatically display an **"Add TaxSahayak to Home screen"** or **"Install App"** prompt at the bottom.
+3. Tap **Install**.
+4. The TaxSahayak icon will appear in your **Android App Drawer** and Home screen alongside your other apps.
+5. Opening it launches a **fullscreen, standalone native window** (no browser address bar, no navigation controls) with offline caching and instant responsiveness.
+
+### 2. On Laptops (Windows, macOS, Chromebook)
+1. Open the deployed HTTPS URL in **Google Chrome** or **Microsoft Edge**.
+2. Look at the right side of the address bar: you will see an **Install TaxSahayak** icon (computer monitor with an arrow, or a `+` symbol).
+3. Click **Install**.
+4. TaxSahayak opens immediately in its own dedicated desktop window with a desktop shortcut, Start Menu entry, and independent taskbar presence.
+
+---
+
 ## 📜 Compliance & Legal Disclaimer
 *TaxSahayak is an educational and tax preparation planning assistant. It operates in full compliance with India's Digital Personal Data Protection (DPDP) Act 2023. It does not provide certified chartered accountancy or legal advice. Taxpayers must verify all values before final submission on the official Income Tax portal.*

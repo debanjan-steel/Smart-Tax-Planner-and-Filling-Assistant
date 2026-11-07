@@ -12,23 +12,27 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'robots.txt'],
       manifest: {
-        name: 'India Tax Return (ITR) Filing Assistant',
-        short_name: 'ITR Assistant',
-        description: 'Privacy-first Progressive Web App for Indian Income Tax Return calculation and filing.',
+        name: 'TaxSahayak - Smart Indian ITR Assistant',
+        short_name: 'TaxSahayak',
+        description: 'Privacy-first Smart Tax Planner & Official Portal Filing Assistant for Indian Taxpayers.',
         theme_color: '#1e3a8a',
         background_color: '#f8fafc',
         display: 'standalone',
-        orientation: 'portrait',
+        orientation: 'portrait-primary',
+        scope: '/',
+        start_url: '/',
         icons: [
           {
             src: '/icon-192.png',
             sizes: '192x192',
-            type: 'image/png'
+            type: 'image/png',
+            purpose: 'any maskable'
           },
           {
             src: '/icon-512.png',
             sizes: '512x512',
-            type: 'image/png'
+            type: 'image/png',
+            purpose: 'any maskable'
           }
         ]
       }

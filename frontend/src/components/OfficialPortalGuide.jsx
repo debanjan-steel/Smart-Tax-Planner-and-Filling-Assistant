@@ -14,6 +14,7 @@ import {
   Send,
   HelpCircle
 } from 'lucide-react';
+import { API_BASE } from '../config';
 
 export default function OfficialPortalGuide({ 
   taxComparison, 
@@ -30,7 +31,7 @@ export default function OfficialPortalGuide({
 
   useEffect(() => {
     // Generate filing plan from backend
-    fetch('/api/v1/portal/filing-plan', {
+    fetch(`${API_BASE}/api/v1/portal/filing-plan`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -51,7 +52,7 @@ export default function OfficialPortalGuide({
       });
 
     // Pre-fetch HTML Computation Sheet
-    fetch('/api/v1/portal/computation-sheet-html', {
+    fetch(`${API_BASE}/api/v1/portal/computation-sheet-html`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({

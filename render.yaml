@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: taxsahayak
+    env: docker
+    region: singapore
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: EPHEMERAL_MODE
+        value: "true"

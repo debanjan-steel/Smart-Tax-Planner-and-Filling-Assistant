@@ -15,6 +15,7 @@ import {
   Layers,
   ArrowUpRight
 } from 'lucide-react';
+import { API_BASE } from '../config';
 
 export default function TaxOptimizerEngine({ financialData, assessmentYear, onProceed }) {
   // Pre-fill from financialData (Form 16 + AIS) or defaults
@@ -49,7 +50,7 @@ export default function TaxOptimizerEngine({ financialData, assessmentYear, onPr
 
   const runCalculation = (currInputs = inputs) => {
     setLoading(true);
-    fetch('/api/v1/tax/calculate', {
+    fetch(`${API_BASE}/api/v1/tax/calculate`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(currInputs)

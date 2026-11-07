@@ -13,6 +13,7 @@ import {
   RefreshCw,
   ShieldAlert
 } from 'lucide-react';
+import { API_BASE } from '../config';
 
 export default function FormFinderWizard({ onComplete, assessmentYear }) {
   const [questions, setQuestions] = useState([]);
@@ -43,7 +44,7 @@ export default function FormFinderWizard({ onComplete, assessmentYear }) {
 
   useEffect(() => {
     // Fetch question definitions from backend
-    fetch('/api/v1/questionnaire/questions')
+    fetch(`${API_BASE}/api/v1/questionnaire/questions`)
       .then(res => res.json())
       .then(data => {
         setQuestions(data);
@@ -192,7 +193,7 @@ export default function FormFinderWizard({ onComplete, assessmentYear }) {
 
   const runDiagnosis = () => {
     setDiagnosing(true);
-    fetch('/api/v1/questionnaire/diagnose', {
+    fetch(`${API_BASE}/api/v1/questionnaire/diagnose`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ ...answers, assessment_year: assessmentYear })
