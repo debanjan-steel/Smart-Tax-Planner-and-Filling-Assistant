@@ -1,0 +1,62 @@
+{
+  "assessment_year": "2025-26",
+  "financial_year": "2024-25",
+  "effective_from": "2024-04-01",
+  "finance_act": "Finance (No. 2) Act, 2024",
+  "new_regime_default": true,
+  "standard_deduction": {
+    "salaried_new_regime": 75000,
+    "salaried_old_regime": 50000,
+    "family_pension_new_regime": 25000,
+    "family_pension_old_regime": 15000
+  },
+  "rebate_87a": {
+    "new_regime": {
+      "threshold_income": 700000,
+      "max_rebate": 25000
+    },
+    "old_regime": {
+      "threshold_income": 500000,
+      "max_rebate": 12500
+    }
+  },
+  "tax_slabs": {
+    "new_regime": [
+      { "min": 0, "max": 300000, "rate": 0.0 },
+      { "min": 300000, "max": 700000, "rate": 0.05 },
+      { "min": 700000, "max": 1000000, "rate": 0.10 },
+      { "min": 1000000, "max": 1200000, "rate": 0.15 },
+      { "min": 1200000, "max": 1500000, "rate": 0.20 },
+      { "min": 1500000, "max": null, "rate": 0.30 }
+    ],
+    "old_regime": [
+      { "min": 0, "max": 250000, "rate": 0.0 },
+      { "min": 250000, "max": 500000, "rate": 0.05 },
+      { "min": 500000, "max": 1000000, "rate": 0.20 },
+      { "min": 1000000, "max": null, "rate": 0.30 }
+    ]
+  },
+  "cess_rate": 0.04,
+  "surcharge": [
+    { "min": 5000000, "max": 10000000, "rate": 0.10 },
+    { "min": 10000000, "max": 20000000, "rate": 0.15 },
+    { "min": 20000000, "max": 50000000, "rate": 0.25 },
+    { "min": 50000000, "max": null, "rate_new_regime": 0.25, "rate_old_regime": 0.37 }
+  ],
+  "deduction_limits": {
+    "section_80c": 150000,
+    "section_80ccd_1b": 50000,
+    "section_80d_self": 25000,
+    "section_80d_parents": 25000,
+    "section_80d_senior_parents": 50000,
+    "section_24b_home_loan_interest": 200000,
+    "section_80tta_savings_interest": 10000,
+    "section_80ttb_senior_interest": 50000
+  },
+  "itr_eligibility": {
+    "itr1_max_income": 5000000,
+    "itr4_max_income": 5000000,
+    "agri_income_limit_itr1": 5000
+  }
+}
+
